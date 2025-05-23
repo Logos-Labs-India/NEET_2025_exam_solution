@@ -118,14 +118,17 @@ def generate_html_from_csv(csv_path, output_path="questions.html"):
         </script>
     </head>
     <body>
-        <h1 style="text-align: center; margin-bottom: 40px;">NEET-2025 Code-48 AI Solutions</h1>
+        <h1 style="text-align: center; margin-bottom: 40px;"><u>NEET-2025 Code-48 AI Solutions</u></h1>
         <table>
-        <caption>Accuracy Summary</caption>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h2>Accuracy Summary</h2>
+        </div>
         <thead>
             <tr>
                 <th>Subject</th>
                 <th>Correct</th>
-                <th>Wrong</th>
+                <th>Incorrect</th>
+                <th>Question Numbers</th>
                 <th>Total</th>
                 <th>Accuracy</th>
             </tr>
@@ -135,6 +138,7 @@ def generate_html_from_csv(csv_path, output_path="questions.html"):
                 <td>Biology</td>
                 <td>87</td>
                 <td>3</td>
+                <td>141, 153, 155</td>
                 <td>90</td>
                 <td>96.7%</td>
             </tr>
@@ -142,6 +146,7 @@ def generate_html_from_csv(csv_path, output_path="questions.html"):
                 <td>Chemistry</td>
                 <td>43</td>
                 <td>2</td>
+                <td>74, 90</td>
                 <td>45</td>
                 <td>95.6%</td>
             </tr>
@@ -149,6 +154,7 @@ def generate_html_from_csv(csv_path, output_path="questions.html"):
                 <td>Physics</td>
                 <td>44</td>
                 <td>1</td>
+                <td>41</td>
                 <td>45</td>
                 <td>97.8%</td>
             </tr>
@@ -156,11 +162,42 @@ def generate_html_from_csv(csv_path, output_path="questions.html"):
                 <td><strong>Total</strong></td>
                 <td><strong>174</strong></td>
                 <td><strong>6</strong></td>
+                <td></td>
                 <td><strong>180</strong></td>
                 <td><strong>96.7%</strong></td>
             </tr>
         </tbody>
     </table>
+    <div style="text-align: center; margin-bottom: 30px;">
+        <h2>Incorrectly Answered Questions</h2>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 60px;">
+        <div>
+            <p style="text-align: center;">Q41</p>
+            <img src="question/41.png" alt="Question 41" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        <div>
+            <p style="text-align: center;">Q74</p>
+            <img src="question/74.png" alt="Question 74" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        <div>
+            <p style="text-align: center;">Q90</p>
+            <img src="question/90.png" alt="Question 90" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        <div>
+            <p style="text-align: center;">Q141</p>
+            <img src="question/141.png" alt="Question 141" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        <div>
+            <p style="text-align: center;">Q153</p>
+            <img src="question/153.png" alt="Question 153" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        <div>
+            <p style="text-align: center;">Q155</p>
+            <img src="question/155.png" alt="Question 155" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+    </div>
         {''.join(html_blocks)}
     </body>
     </html>
