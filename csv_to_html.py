@@ -2,7 +2,7 @@
 import pandas as pd
 
 #%%
-csv_file = r"C:\Users\Abcom\Downloads\exam_neet_sample.csv"
+csv_file = r"exam_neet_sample.csv"
 
 #%%
 
@@ -87,6 +87,30 @@ def generate_html_from_csv(csv_path, output_path="questions.html"):
             h2 {{
                 margin-top: 0;
             }}
+
+            table {{
+                width: 90%;
+            margin: 0 auto 50px;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 16px;
+            }}      
+
+            th, td {{
+                border: 1px solid #333;
+                padding: 10px 14px;
+            }}
+
+            th {{
+                background-color: #f2f2f2;
+            }}
+
+            caption {{
+                caption-side: top;
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }}
         </style>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script type="text/javascript" id="MathJax-script" async
@@ -94,7 +118,49 @@ def generate_html_from_csv(csv_path, output_path="questions.html"):
         </script>
     </head>
     <body>
-        <h1 style="text-align: center; margin-bottom: 40px;">NEET-2025 Code-48</h1>
+        <h1 style="text-align: center; margin-bottom: 40px;">NEET-2025 Code-48 AI Solutions</h1>
+        <table>
+        <caption>Accuracy Summary</caption>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Correct</th>
+                <th>Wrong</th>
+                <th>Total</th>
+                <th>Accuracy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Biology</td>
+                <td>87</td>
+                <td>3</td>
+                <td>90</td>
+                <td>96.7%</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>43</td>
+                <td>2</td>
+                <td>45</td>
+                <td>95.6%</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>44</td>
+                <td>1</td>
+                <td>45</td>
+                <td>97.8%</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>174</strong></td>
+                <td><strong>6</strong></td>
+                <td><strong>180</strong></td>
+                <td><strong>96.7%</strong></td>
+            </tr>
+        </tbody>
+    </table>
         {''.join(html_blocks)}
     </body>
     </html>
