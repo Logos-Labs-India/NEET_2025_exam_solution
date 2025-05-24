@@ -2,17 +2,17 @@
 import pandas as pd
 
 #%%
-csv_file = r"C:\Users\Abcom\Desktop\JEE_evaluation\JEE-2025 - jee_pdf_content.csv"
+csv_file = r"JEE-2025 - jee_pdf_content (1).csv"
 
 #%%
 
-def generate_html_from_csv(csv_path=csv_file , output_path=r"C:\Users\Abcom\Desktop\JEE_evaluation\questions.html"):
+def generate_html_from_csv(csv_path=csv_file , output_path=r"jee-2025.html"):
     df = pd.read_csv(csv_path)
 
     html_blocks = []
     for idx, row in df.iterrows():
         q_num = row.get("question_number", f"Question {idx+1}")
-        img_src = row.get("question_url", "")
+        img_src = row.get("image_path", "")
         correct_option = row.get("correct_answer", "N/A")
         solution = row.get("solution", "")
 
@@ -87,6 +87,29 @@ def generate_html_from_csv(csv_path=csv_file , output_path=r"C:\Users\Abcom\Desk
             h2 {{
                 margin-top: 0;
             }}
+            table {{
+                width: 90%;
+            margin: 0 auto 50px;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 16px;
+            }}      
+
+            th, td {{
+                border: 1px solid #333;
+                padding: 10px 14px;
+            }}
+
+            th {{
+                background-color: #f2f2f2;
+            }}
+
+            caption {{
+                caption-side: top;
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }}
         </style>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script type="text/javascript" id="MathJax-script" async
@@ -94,8 +117,80 @@ def generate_html_from_csv(csv_path=csv_file , output_path=r"C:\Users\Abcom\Desk
         </script>
     </head>
     <body>
-        <h1 style="text-align: center; margin-bottom: 40px;">JEE-2025 [ 22-01-2025 (shift 1) ]</h1>
-        {''.join(html_blocks)}
+        <h1 style="text-align: center; margin-bottom: 40px;"><u>NEET-2025 Code-48 AI Solutions</u></h1>
+        <table>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h2>Accuracy Summary</h2>
+        </div>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Correct</th>
+                <th>Incorrect</th>
+                <th>Question Numbers</th>
+                <th>Total</th>
+                <th>Accuracy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mathematics</td>
+                <td>24</td>
+                <td>1</td>
+                <td>15</td>
+                <td>25</td>
+                <td>96%</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>24</td>
+                <td>1</td>
+                <td>74</td>
+                <td>25</td>
+                <td>96%</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>23</td>
+                <td>2</td>
+                <td>26, 49</td>
+                <td>25</td>
+                <td>92%</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>71</strong></td>
+                <td><strong>4</strong></td>
+                <td></td>
+                <td><strong>75</strong></td>
+                <td><strong>94.7%</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="text-align: center; margin-bottom: 30px;">
+        <h2>Incorrectly Answered Questions</h2>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 60px;">
+        <div>
+            <p style="text-align: center;">Q15</p>
+            <img src="jee_images/15.png" alt="Question 41" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        <div>
+            <p style="text-align: center;">Q26</p>
+            <img src="jee_images/26.png" alt="Question 74" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        <div>
+            <p style="text-align: center;">Q49</p>
+            <img src="jee_images/49.png" alt="Question 90" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        <div>
+            <p style="text-align: center;">Q74</p>
+            <img src="jee_images/74.png" alt="Question 141" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        
+    </div>
+    {''.join(html_blocks)}
     </body>
     </html>
     """
@@ -116,20 +211,20 @@ df.head()
 
 #%%
 
-df['question_url'] = df['question_url'].str.replace(
-    r"C:/Users/Abcom/Desktop/JEE_evaluation/Jee_images_set_1",
-    r"question/",
+df['image_path'] = df['image_path'].str.replace(
+    "C:\\Users\\Abcom\\Desktop\\JEE_evaluation\\Jee_images_set_1\\",
+    "jee_images/",
     regex=False
 )
 df.head()
 
 #%%
 
-# df[df['question_url'].str.contains("/C:/Users/Abcom/Downloads/question/")]
+# df[df['image_path'].str.contains("C:\Users\Abcom\Desktop\JEE_evaluation\Jee_images_set_1\")]
 
 #%%
 
-df.to_csv("exam_neet_sample.csv", index=False)
+df.to_csv("JEE-2025 - jee_pdf_content (1).csv", index=False)
 #%%
 
 csv_file.to_csv("exam_neet_sample.csv", index=False)

@@ -1,5 +1,161 @@
-question_number,image_path,correct_answer,solution
-1,jee_images/1.png,3,"Let A = {1, 2, 3}. We need to find the number of equivalence relations on A. An equivalence relation corresponds to a partition of the set. The partitions of A are:
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Questions Viewer</title>
+        <style>
+            @page {
+                size: A4;
+                margin: 20mm;
+            }
+
+            body {
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .title {
+                text-align: center;
+                font-size: 24px;
+                margin: 40px 0;
+            }
+
+            .question-page {
+                width: 210mm;
+                height: 297mm;
+                padding: 20mm;
+                box-sizing: border-box;
+                page-break-after: always;
+                overflow: hidden;
+            }
+
+            .question-page:last-child {
+                page-break-after: auto;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            h2 {
+                margin-top: 0;
+            }
+            table {
+                width: 90%;
+            margin: 0 auto 50px;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 16px;
+            }      
+
+            th, td {
+                border: 1px solid #333;
+                padding: 10px 14px;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+            caption {
+                caption-side: top;
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+        </style>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align: center; margin-bottom: 40px;"><u>NEET-2025 Code-48 AI Solutions</u></h1>
+        <table>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h2>Accuracy Summary</h2>
+        </div>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Correct</th>
+                <th>Incorrect</th>
+                <th>Question Numbers</th>
+                <th>Total</th>
+                <th>Accuracy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mathematics</td>
+                <td>24</td>
+                <td>1</td>
+                <td>15</td>
+                <td>25</td>
+                <td>96%</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>24</td>
+                <td>1</td>
+                <td>74</td>
+                <td>25</td>
+                <td>96%</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>23</td>
+                <td>2</td>
+                <td>26, 49</td>
+                <td>25</td>
+                <td>92%</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>71</strong></td>
+                <td><strong>4</strong></td>
+                <td></td>
+                <td><strong>75</strong></td>
+                <td><strong>94.7%</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="text-align: center; margin-bottom: 30px;">
+        <h2>Incorrectly Answered Questions</h2>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 60px;">
+        <div>
+            <p style="text-align: center;">Q15</p>
+            <img src="jee_images/15.png" alt="Question 41" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        <div>
+            <p style="text-align: center;">Q26</p>
+            <img src="jee_images/26.png" alt="Question 74" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        <div>
+            <p style="text-align: center;">Q49</p>
+            <img src="jee_images/49.png" alt="Question 90" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        <div>
+            <p style="text-align: center;">Q74</p>
+            <img src="jee_images/74.png" alt="Question 141" style="max-width: 400px; border: 1px solid #ccc; padding: 5px;">
+        </div>
+        
+    </div>
+    
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 1</h2>
+            <div>
+                <img src="jee_images/1.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let A = {1, 2, 3}. We need to find the number of equivalence relations on A. An equivalence relation corresponds to a partition of the set. The partitions of A are:
 1. {{1}, {2}, {3}}  This corresponds to the relation R = {(1,1), (2,2), (3,3)}
 2. {{1, 2}, {3}} This corresponds to the relation R = {(1,1), (2,2), (3,3), (1,2), (2,1)}
 3. {{1, 3}, {2}} This corresponds to the relation R = {(1,1), (2,2), (3,3), (1,3), (3,1)}
@@ -7,8 +163,19 @@ question_number,image_path,correct_answer,solution
 5. {{1, 2, 3}} This corresponds to the relation R = {(1,1), (2,2), (3,3), (1,2), (2,1), (1,3), (3,1), (2,3), (3,2)}
 
 There are 5 equivalence relations on the set {1, 2, 3}.
-"
-2,jee_images/2.png,1,"To solve this problem, we need to find the function \( f(x) \) that satisfies the given conditions and then determine the area of the region \( R = \{(x, y) \mid 0 \leq y \leq f(ax), 0 \leq x \leq 2\} \).
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 2</h2>
+            <div>
+                <img src="jee_images/2.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To solve this problem, we need to find the function \( f(x) \) that satisfies the given conditions and then determine the area of the region \( R = \{(x, y) \mid 0 \leq y \leq f(ax), 0 \leq x \leq 2\} \).
 
 ### Step 1: Solve the Functional Equation
 
@@ -80,8 +247,19 @@ Evaluate from 0 to 2:
 Thus, the area of the region \( R \) is \( e^2 - 1 \).
 
 ### Conclusion
-The correct option is (1) \( e^2 - 1 \)."
-3,jee_images/3.png,4,"Let the vertices of the triangle be A(1,3), B(3,1), and C(2,4). The image of the triangle PQR is obtained by reflecting the triangle ABC in the line x+2y=2. Let the vertices of triangle PQR be A'(x1,y1), B'(x2,y2) and C'(x3,y3).
+The correct option is (1) \( e^2 - 1 \).</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 3</h2>
+            <div>
+                <img src="jee_images/3.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let the vertices of the triangle be A(1,3), B(3,1), and C(2,4). The image of the triangle PQR is obtained by reflecting the triangle ABC in the line x+2y=2. Let the vertices of triangle PQR be A'(x1,y1), B'(x2,y2) and C'(x3,y3).
 
 To find the image of A(1,3) in the line x+2y=2:
 (x1-1)/1 = (y1-3)/2 = -2(1+2(3)-2)/(1^2+2^2) = -2(1+6-2)/5 = -2(5)/5 = -2
@@ -107,8 +285,19 @@ beta = (-1 - 7/5 - 12/5)/3 = (-5/5 - 7/5 - 12/5)/3 = (-24/5)/3 = -24/15 = -8/5
 
 15(alpha - beta) = 15(-2/15 - (-8/5)) = 15(-2/15 + 24/15) = 15(22/15) = 22
 
-"
-4,jee_images/4.png,4,"Given |z| = 1, we have |z1| = |z2| = |z3| = 1. Also, arg(z1) = -π/4, arg(z2) = 0, arg(z3) = π/4.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 4</h2>
+            <div>
+                <img src="jee_images/4.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Given |z| = 1, we have |z1| = |z2| = |z3| = 1. Also, arg(z1) = -π/4, arg(z2) = 0, arg(z3) = π/4.
 Then z1 = e^(-iπ/4) = cos(-π/4) + i sin(-π/4) = 1/√2 - i/√2
 z2 = e^(i*0) = cos(0) + i sin(0) = 1
 z3 = e^(iπ/4) = cos(π/4) + i sin(π/4) = 1/√2 + i/√2
@@ -130,8 +319,19 @@ Given |z1*conjugate(z2) + z2*conjugate(z3) + z3*conjugate(z1)|^2 = α + β√2
 So, 5 - 2√2 = α + β√2
 Comparing the two sides, we get α = 5 and β = -2
 
-We need to find the value of α^2 + β^2 = 5^2 + (-2)^2 = 25 + 4 = 29"
-5,jee_images/5.png,4,"Let $f(x) = 16[(\sec^{-1}x)^2 + (\csc^{-1}x)^2]$.
+We need to find the value of α^2 + β^2 = 5^2 + (-2)^2 = 25 + 4 = 29</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 5</h2>
+            <div>
+                <img src="jee_images/5.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let $f(x) = 16[(\sec^{-1}x)^2 + (\csc^{-1}x)^2]$.
 The domain of $\sec^{-1}x$ is $(-\infty, -1] \cup [1, \infty)$.
 The range of $\sec^{-1}x$ is $[0, \pi] - {\frac{\pi}{2}}$.
 The domain of $\csc^{-1}x$ is $(-\infty, -1] \cup [1, \infty)$.
@@ -149,8 +349,19 @@ $g(\pi) = 32(\pi)^2 - 16\pi(\pi) + 4\pi^2 = 32\pi^2 - 16\pi^2 + 4\pi^2 = 20\pi^2
 However, $y \ne \frac{\pi}{2}$.
 $g(\frac{\pi}{2}) = 32(\frac{\pi}{2})^2 - 16\pi(\frac{\pi}{2}) + 4\pi^2 = 32(\frac{\pi^2}{4}) - 8\pi^2 + 4\pi^2 = 8\pi^2 - 8\pi^2 + 4\pi^2 = 4\pi^2$.
 Since $20\pi^2 > 4\pi^2$, the maximum value is $20\pi^2$.
-The sum of the maximum and minimum values is $20\pi^2 + 2\pi^2 = 22\pi^2$."
-6,jee_images/6.png,2,"Let X be the random variable denoting the number of times a tail follows a head when a coin is tossed three times. The sample space is given by {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}. The possible outcomes are:
+The sum of the maximum and minimum values is $20\pi^2 + 2\pi^2 = 22\pi^2$.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 6</h2>
+            <div>
+                <img src="jee_images/6.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let X be the random variable denoting the number of times a tail follows a head when a coin is tossed three times. The sample space is given by {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}. The possible outcomes are:
 HHH: X = 0
 HHT: X = 1
 HTH: X = 1
@@ -173,8 +384,19 @@ E(X^2) = \u03a3 x^2 * P(X=x) = 0^2 * (1/2) + 1^2 * (1/2) = 1/2
 \u03c3^2 = (1/2) - (1/2)^2 = 1/2 - 1/4 = 1/4
 
 We are asked to find the value of 64(\u03bc + \u03c3^2) = 64(1/2 + 1/4) = 64(3/4) = 16*3 = 48
-Therefore, 64(\u03bc + \u03c3^2) = 48"
-7,jee_images/7.png,3,"Given that \(a_1, a_2, a_3, \ldots\) is a geometric progression (G.P.) with common ratio \(r\).
+Therefore, 64(\u03bc + \u03c3^2) = 48</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 7</h2>
+            <div>
+                <img src="jee_images/7.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Given that \(a_1, a_2, a_3, \ldots\) is a geometric progression (G.P.) with common ratio \(r\).
 
 The terms of the G.P. can be expressed as:
 - \(a_1 = a\)
@@ -241,8 +463,19 @@ Since \(r\) must be positive and greater than 1 (as the G.P. is increasing):
 
 Thus, \(a_6 = 784\).
 
-The correct option is (3) 784."
-8,jee_images/8.png,3,"To find the point that lies on the line of shortest distance between two skew lines, we need to find the direction vector of the line of shortest distance and then check which point satisfies the condition.
+The correct option is (3) 784.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 8</h2>
+            <div>
+                <img src="jee_images/8.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To find the point that lies on the line of shortest distance between two skew lines, we need to find the direction vector of the line of shortest distance and then check which point satisfies the condition.
 
 The given lines are:
 
@@ -281,8 +514,19 @@ Let's check the point \( \left( \frac{8}{3}, -1, \frac{1}{3} \right) \):
 3. Check if \( \mathbf{v} \) is perpendicular to \( \mathbf{d_2} \):
    \[ \mathbf{v} \cdot \mathbf{d_2} = \frac{5}{3} \cdot 3 + (-3) \cdot 4 + \left(-\frac{8}{3}\right) \cdot 5 = 5 - 12 - \frac{40}{3} = 0 \]
 
-Since \( \mathbf{v} \) is perpendicular to both \( \mathbf{d_1} \) and \( \mathbf{d_2} \), the point \( \left( \frac{8}{3}, -1, \frac{1}{3} \right) \) lies on the line of shortest distance between \( L_1 \) and \( L_2 \)."
-9,jee_images/9.png,1,"Given the equation: e^(5(log_e x)^2 + 3) = x^8
+Since \( \mathbf{v} \) is perpendicular to both \( \mathbf{d_1} \) and \( \mathbf{d_2} \), the point \( \left( \frac{8}{3}, -1, \frac{1}{3} \right) \) lies on the line of shortest distance between \( L_1 \) and \( L_2 \).</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 9</h2>
+            <div>
+                <img src="jee_images/9.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Given the equation: e^(5(log_e x)^2 + 3) = x^8
 Taking the natural logarithm (ln) of both sides:
 ln(e^(5(log_e x)^2 + 3)) = ln(x^8)
 5(log_e x)^2 + 3 = 8 ln(x)
@@ -309,8 +553,19 @@ Option 2: e^(6/5)
 Option 3: e^2
 Option 4: e
 The correct option is e^(8/5).
-"
-10,jee_images/10.png,3,"Let S_n = \sum_{r=1}^{n} T_r = \frac{(2n-1)(2n+1)(2n+3)(2n+5)}{64}
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 10</h2>
+            <div>
+                <img src="jee_images/10.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let S_n = \sum_{r=1}^{n} T_r = \frac{(2n-1)(2n+1)(2n+3)(2n+5)}{64}
 We need to find \lim_{n \to \infty} \sum_{r=1}^{n} \frac{1}{T_r}.
 First, let's find an expression for T_r. Since S_n = \sum_{r=1}^{n} T_r, then T_r = S_r - S_{r-1}.
 So, T_r = \frac{(2r-1)(2r+1)(2r+3)(2r+5)}{64} - \frac{(2(r-1)-1)(2(r-1)+1)(2(r-1)+3)(2(r-1)+5)}{64}
@@ -329,8 +584,19 @@ Now, \sum_{r=1}^{n} \frac{1}{T_r} = \sum_{r=1}^{n} [(\frac{1}{2r-1} - \frac{1}{2
 = (1 - \frac{1}{2n+1}) - (\frac{1}{3} - \frac{1}{2n+3}) = 1 - \frac{1}{2n+1} - \frac{1}{3} + \frac{1}{2n+3}
 = \frac{2}{3} - \frac{1}{2n+1} + \frac{1}{2n+3}.
 Now, \lim_{n \to \infty} \sum_{r=1}^{n} \frac{1}{T_r} = \lim_{n \to \infty} (\frac{2}{3} - \frac{1}{2n+1} + \frac{1}{2n+3}) = \frac{2}{3} - 0 + 0 = \frac{2}{3}.
-"
-11,jee_images/11.png,4,"We are given that five letters are chosen from the English alphabet and arranged in alphabetical order. We need to find the number of ways in which the middle letter is 'M'.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 11</h2>
+            <div>
+                <img src="jee_images/11.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>We are given that five letters are chosen from the English alphabet and arranged in alphabetical order. We need to find the number of ways in which the middle letter is 'M'.
 
 Since the letters are in alphabetical order and 'M' is the middle letter, there must be two letters before 'M' and two letters after 'M'.
 
@@ -343,8 +609,19 @@ ${13 \choose 2} = \frac{13!}{2!(13-2)!} = \frac{13!}{2!11!} = \frac{13 \times 12
 To find the total number of ways in which the middle letter is 'M', we multiply the number of ways to choose the two letters before 'M' and the number of ways to choose the two letters after 'M':
 Total number of ways = ${12 \choose 2} \times {13 \choose 2} = 66 \times 78$
 $66 \times 78 = 5148$
-Therefore, the total number of ways in which the middle letter is 'M' is 5148."
-12,jee_images/12.png,3,"To solve the given differential equation \( y^2 \, dx + \left( x - \frac{1}{y} \right) \, dy = 0 \), we can rearrange it as:
+Therefore, the total number of ways in which the middle letter is 'M' is 5148.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 12</h2>
+            <div>
+                <img src="jee_images/12.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To solve the given differential equation \( y^2 \, dx + \left( x - \frac{1}{y} \right) \, dy = 0 \), we can rearrange it as:
 
 \[ y^2 \, dx = -\left( x - \frac{1}{y} \right) \, dy \]
 
@@ -412,8 +689,19 @@ Comparing with the options, the correct option is:
 
 \[ \boxed{3 - e} \]
 
-Thus, the correct option is 3."
-13,jee_images/13.png,2,"To find the points where the parabola \( y = x^2 + px - 3 \) meets the coordinate axes, we need to find the x-intercepts and y-intercept.
+Thus, the correct option is 3.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 13</h2>
+            <div>
+                <img src="jee_images/13.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To find the points where the parabola \( y = x^2 + px - 3 \) meets the coordinate axes, we need to find the x-intercepts and y-intercept.
 
 1. **Finding the x-intercepts (Points P and Q):**
    - Set \( y = 0 \):
@@ -459,8 +747,19 @@ Thus, the correct option is 3."
 
 Therefore, the area of \( \triangle PQR \) is 6.
 
-correct_option: 2"
-14,jee_images/14.png,1,"Let the center of circle C be (-2, 2) and radius be 2. The equation of circle C is (x+2)^2 + (y-2)^2 = 4.
+correct_option: 2</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 14</h2>
+            <div>
+                <img src="jee_images/14.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let the center of circle C be (-2, 2) and radius be 2. The equation of circle C is (x+2)^2 + (y-2)^2 = 4.
 Let the center of the other circle be (2, 5) and radius be r. The equation of the other circle is (x-2)^2 + (y-5)^2 = r^2.
 For the two circles to intersect at exactly two points, the distance between the centers must be between the difference and the sum of the radii.
 The distance between the centers (-2, 2) and (2, 5) is d = sqrt((2 - (-2))^2 + (5-2)^2) = sqrt(4^2 + 3^2) = sqrt(16+9) = sqrt(25) = 5.
@@ -470,8 +769,19 @@ This inequality can be split into two inequalities:
 2) 5 < r + 2 which means r > 3.
 Combining these two inequalities, we have 3 < r < 7.
 Therefore, the set of all possible values of r is the interval (3, 7). Thus, α = 3 and β = 7.
-We need to find the value of 3β - 2α = 3(7) - 2(3) = 21 - 6 = 15."
-15,jee_images/15.png,4,"To solve this problem, we need to evaluate the integrals \( I_1 \) and \( I_2 \) and then compute \( 7I_1 + 12I_2 \).
+We need to find the value of 3β - 2α = 3(7) - 2(3) = 21 - 6 = 15.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 15</h2>
+            <div>
+                <img src="jee_images/15.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To solve this problem, we need to evaluate the integrals \( I_1 \) and \( I_2 \) and then compute \( 7I_1 + 12I_2 \).
 
 ### Step 1: Simplify \( f(x) \)
 Given:
@@ -502,8 +812,19 @@ After evaluating the integrals, substitute the values back into the expression:
 
 \[ 7I_1 + 12I_2 = 2 \]
 
-Thus, the correct answer is option (4)."
-16,jee_images/16.png,2,"To solve this problem, we need to analyze the given functional equation:
+Thus, the correct answer is option (4).</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 16</h2>
+            <div>
+                <img src="jee_images/16.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To solve this problem, we need to analyze the given functional equation:
 
 \[ f(x+y) = f(x)f'(y) + f'(x)f(y) \]
 
@@ -575,8 +896,19 @@ This matches option 2.
 
 Therefore, the correct option is:
 
-correct_option: 2"
-17,jee_images/17.png,1,"Let A = {1, 2, 3, ..., 10} and B = {m/n : m, n \u2208 A, m < n, gcd(m, n) = 1}. We want to find the number of elements in B, which is denoted by n(B).
+correct_option: 2</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 17</h2>
+            <div>
+                <img src="jee_images/17.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let A = {1, 2, 3, ..., 10} and B = {m/n : m, n \u2208 A, m < n, gcd(m, n) = 1}. We want to find the number of elements in B, which is denoted by n(B).
 
 We need to find the pairs (m, n) such that m < n, m, n \u2208 A, and gcd(m, n) = 1.
 
@@ -603,8 +935,19 @@ n = 9: 6
 n = 10: 4
 
 Total number of pairs = 1 + 2 + 2 + 4 + 2 + 6 + 4 + 6 + 4 = 31
-Therefore, n(B) = 31."
-18,jee_images/18.png,3,"The equation of the circle is $${\left(x-2\sqrt{3}\right)}^{2}+{y}^{2}=12$$, which has center $$(2\sqrt{3}, 0)$$ and radius $$r = \sqrt{12} = 2\sqrt{3}$$.
+Therefore, n(B) = 31.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 18</h2>
+            <div>
+                <img src="jee_images/18.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The equation of the circle is $${\left(x-2\sqrt{3}\right)}^{2}+{y}^{2}=12$$, which has center $$(2\sqrt{3}, 0)$$ and radius $$r = \sqrt{12} = 2\sqrt{3}$$.
 The equation of the parabola is $$y^2 = 2\sqrt{3}x$$.
 
 To find the points of intersection of the circle and the parabola, we substitute $$y^2$$ from the parabola equation into the circle equation:
@@ -625,8 +968,19 @@ $$2 \int_{0}^{2\sqrt{3}} \sqrt{2\sqrt{3}x} dx = 2\sqrt{2\sqrt{3}} \int_{0}^{2\sq
 
 The area of the circle segment is half the circle. So the area is $$6\pi$$.
 TheThe required area can be found as follows: The circle passes through the origin. The x-coordinate of the centre of the circle is $$2\sqrt{3}$$, which also corresponds to the x-coordinate of intersection of circle and parabola. Thus the required area is area of the circle - area enclosed by parabola from (0,0) to $$(2\sqrt{3},2\sqrt{3})$$ and $$(2\sqrt{3},-2\sqrt{3})$$ which is equal to $$6\pi - 16$$.
-"
-19,jee_images/19.png,1,"Let B1 be the event that the first ball selected is black.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 19</h2>
+            <div>
+                <img src="jee_images/19.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let B1 be the event that the first ball selected is black.
 Let B2 be the event that the second ball selected is black.
 We are asked to find the probability that the first selected ball is black, given that the second selected ball is also black, i.e., P(B1|B2).
 We know that P(B1|B2) = P(B1 and B2) / P(B2)
@@ -649,16 +1003,38 @@ P(B1|B2) = P(B1 and B2) / P(B2) = (1/3) / (3/5) = (1/3) * (5/3) = 5/9
 The probability is given as m/n, where gcd(m,n) = 1. In this case, m = 5 and n = 9, and gcd(5,9) = 1.
 We are asked to find m + n = 5 + 9 = 14.
 
-"
-20,jee_images/20.png,3,"Let the foci be $F_1 = (1, 14)$ and $F_2 = (1, -12)$. The center of the hyperbola is the midpoint of the foci, so the center is $C = (1, rac{14 - 12}{2}) = (1, 1)$.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 20</h2>
+            <div>
+                <img src="jee_images/20.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let the foci be $F_1 = (1, 14)$ and $F_2 = (1, -12)$. The center of the hyperbola is the midpoint of the foci, so the center is $C = (1, rac{14 - 12}{2}) = (1, 1)$.
 The distance between the foci is $2c = 14 - (-12) = 26$, so $c = 13$.
 Since the foci have the same x-coordinate, the hyperbola has a vertical transverse axis. The equation of the hyperbola is of the form $rac{(y - 1)^2}{a^2} - rac{(x - 1)^2}{b^2} = 1$.
 The hyperbola passes through the point $(1, 6)$. Plugging this point into the equation, we get
 $rac{(6 - 1)^2}{a^2} - rac{(1 - 1)^2}{b^2} = 1$
 $rac{25}{a^2} = 1$, so $a^2 = 25$ and $a = 5$.
 We have $c^2 = a^2 + b^2$, so $13^2 = 5^2 + b^2$. Thus, $169 = 25 + b^2$, so $b^2 = 144$ and $b = 12$.
-The length of the latus rectum is $rac{2b^2}{a} = rac{2(144)}{5} = rac{288}{5}$."
-21,jee_images/21.png,34,"Since f(x) is differentiable, it must be continuous at x=1.
+The length of the latus rectum is $rac{2b^2}{a} = rac{2(144)}{5} = rac{288}{5}$.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 21</h2>
+            <div>
+                <img src="jee_images/21.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 34</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Since f(x) is differentiable, it must be continuous at x=1.
 Therefore, -3a(1)^2 - 2 = a^2 + b(1)
 -3a - 2 = a^2 + b
 b = -a^2 - 3a - 2
@@ -695,8 +1071,19 @@ Area should be positive, so we take the absolute value.
 Area = |-22 - 12sqrt(3)| = 22 + 12sqrt(3)
 Area = alpha + beta*sqrt(3)
 alpha = 22, beta = 12
-alpha + beta = 22 + 12 = 34"
-22,jee_images/22.png,2035,"To solve this problem, we need to evaluate the given sum and express it in the form \( \frac{m}{n} \) where \( \text{gcd}(m, n) = 1 \).
+alpha + beta = 22 + 12 = 34</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 22</h2>
+            <div>
+                <img src="jee_images/22.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2035</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To solve this problem, we need to evaluate the given sum and express it in the form \( \frac{m}{n} \) where \( \text{gcd}(m, n) = 1 \).
 
 The given expression is:
 
@@ -753,8 +1140,19 @@ Thus, \( \frac{m}{n} = \frac{2047}{12} \) where \( \text{gcd}(2047, 12) = 1 \).
 Therefore, \( m = 2047 \) and \( n = 12 \).
 
 Finally, \( m - n = 2047 - 12 = 2035 \).
-"
-23,jee_images/23.png,34,"Let A be a square matrix of order 3 such that det(A) = -2 and det(3adj(-6adj(3A))) = 2^(m+n) * 3^(mn), m > n. Then 4m + 2n is equal to __.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 23</h2>
+            <div>
+                <img src="jee_images/23.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 34</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let A be a square matrix of order 3 such that det(A) = -2 and det(3adj(-6adj(3A))) = 2^(m+n) * 3^(mn), m > n. Then 4m + 2n is equal to __.
 
 Given that det(A) = -2.
 We know that adj(A) = det(A) * A^(-1)
@@ -795,8 +1193,19 @@ m and n are roots of the quadratic equation x^2 - 10x + 21 = 0
 So, x = 7 or x = 3
 Since m > n, m = 7 and n = 3
 Therefore, 4m + 2n = 4(7) + 2(3) = 28 + 6 = 34
-"
-24,jee_images/24.png,216,"Let the coordinates of a general point on line L2 be (2λ+2, 0, αλ-4). Let P be the foot of the perpendicular from A(1,1,-1) to L2. Then the coordinates of P are (2λ+2, 0, αλ-4) for some λ. The direction ratios of AP are (2λ+2-1, 0-1, αλ-4-(-1)) = (2λ+1, -1, αλ-3). The direction ratios of L2 are (2, 0, α). Since AP is perpendicular to L2, the dot product of their direction ratios is 0. So, 2(2λ+1) + 0(-1) + α(αλ-3) = 0, which simplifies to 4λ+2 + α²λ - 3α = 0. Thus, λ(4+α²) = 3α-2, and λ = (3α-2)/(α²+4). Therefore, the coordinates of P are (2(3α-2)/(α²+4) + 2, 0, α(3α-2)/(α²+4) - 4) = ((6α-4+2α²+8)/(α²+4), 0, (3α²-2α-4α²-16)/(α²+4)) = ((2α²+6α+4)/(α²+4), 0, (-α²-2α-16)/(α²+4)).
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 24</h2>
+            <div>
+                <img src="jee_images/24.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 216</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let the coordinates of a general point on line L2 be (2λ+2, 0, αλ-4). Let P be the foot of the perpendicular from A(1,1,-1) to L2. Then the coordinates of P are (2λ+2, 0, αλ-4) for some λ. The direction ratios of AP are (2λ+2-1, 0-1, αλ-4-(-1)) = (2λ+1, -1, αλ-3). The direction ratios of L2 are (2, 0, α). Since AP is perpendicular to L2, the dot product of their direction ratios is 0. So, 2(2λ+1) + 0(-1) + α(αλ-3) = 0, which simplifies to 4λ+2 + α²λ - 3α = 0. Thus, λ(4+α²) = 3α-2, and λ = (3α-2)/(α²+4). Therefore, the coordinates of P are (2(3α-2)/(α²+4) + 2, 0, α(3α-2)/(α²+4) - 4) = ((6α-4+2α²+8)/(α²+4), 0, (3α²-2α-4α²-16)/(α²+4)) = ((2α²+6α+4)/(α²+4), 0, (-α²-2α-16)/(α²+4)).
 
 Now, since L1 and L2 intersect at point B, we can equate the equations of L1 and L2:
 (x-1)/3 = (y-1)/-1 = (z+1)/0 = k (say)
@@ -806,8 +1215,19 @@ Now that we have α=3, we can find λ. λ = (3(3)-2)/(3²+4) = (9-2)/(9+4) = 7/1
 So, the coordinates of P are (2(7/13)+2, 0, 3(7/13)-4) = (14/13 + 26/13, 0, 21/13 - 52/13) = (40/13, 0, -31/13).
 The coordinates of B are (3k+1, -k+1, -1) = (3(1)+1, -1+1, -1) = (4, 0, -1). Since α=3, the coordinates of B can also be written as (2m+2, 0, αm-4) = (2(1)+2, 0, 3(1)-4) = (4, 0, -1).
 Now we need to find (PB)². P = (40/13, 0, -31/13) and B = (4, 0, -1). So, (PB)² = (40/13 - 4)² + (0-0)² + (-31/13 - (-1))² = (40/13 - 52/13)² + (-31/13 + 13/13)² = (-12/13)² + (-18/13)² = (144/169) + (324/169) = 468/169 = 36/13.
-We are asked to find 26α(PB)² = 26(3)(36/13) = 2(3)(36) = 6(36) = 216."
-25,jee_images/25.png,16,"Let the projection of vector \(\vec{b}\) on \(\vec{a}\) be \(\vec{c}\).
+We are asked to find 26α(PB)² = 26(3)(36/13) = 2(3)(36) = 6(36) = 216.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 25</h2>
+            <div>
+                <img src="jee_images/25.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 16</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let the projection of vector \(\vec{b}\) on \(\vec{a}\) be \(\vec{c}\).
 Given, \(\vec{b} = \lambda \hat{i} + 4\hat{k}\) and \(\vec{a} = \hat{i} + 2\hat{j} + 2\hat{k}\)
 
 The projection vector \(\vec{c}\) of \(\vec{b}\) on \(\vec{a}\) is given by:
@@ -834,13 +1254,35 @@ Now, \(\vec{b} = 4\hat{i} + 4\hat{k}\)
 The area of the parallelogram formed by \(\vec{b}\) and \(\vec{c}\) is given by \(|\vec{b} \times \vec{c}|\).
 \[\vec{b} \times \vec{c} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 4 & 0 & 4 \\ \frac{4}{3} & \frac{8}{3} & \frac{8}{3} \end{vmatrix} = \hat{i}(0 - \frac{32}{3}) - \hat{j}(\frac{32}{3} - \frac{16}{3}) + \hat{k}(\frac{32}{3} - 0) = -\frac{32}{3}\hat{i} - \frac{16}{3}\hat{j} + \frac{32}{3}\hat{k}\]
 \[|\vec{b} \times \vec{c}| = \sqrt{(-\frac{32}{3})^2 + (-\frac{16}{3})^2 + (\frac{32}{3})^2} = \sqrt{\frac{1024}{9} + \frac{256}{9} + \frac{1024}{9}} = \sqrt{\frac{2304}{9}} = \sqrt{256} = 16\]
-"
-26,jee_images/26.png,2,"Statement I: In a vernier callipers, one vernier scale division is always smaller than one main scale division. This statement is true. The vernier scale is designed such that its divisions are slightly smaller than the main scale divisions, allowing for more precise measurements. For example, if 10 VSD coincide with 9 MSD, it means that 1 VSD is smaller than 1 MSD.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 26</h2>
+            <div>
+                <img src="jee_images/26.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Statement I: In a vernier callipers, one vernier scale division is always smaller than one main scale division. This statement is true. The vernier scale is designed such that its divisions are slightly smaller than the main scale divisions, allowing for more precise measurements. For example, if 10 VSD coincide with 9 MSD, it means that 1 VSD is smaller than 1 MSD.
 
 Statement II: The vernier constant is given by one main scale division multiplied by the number of vernier scale division. This statement is false. The vernier constant (also known as the least count) is calculated as the difference between one main scale division (MSD) and one vernier scale division (VSD). It can also be expressed as MSD / (number of divisions on vernier scale). For example if n VSD = (n-1) MSD, then Least count = 1 MSD - 1 VSD = 1 MSD - (n-1)/n MSD = (1/n) MSD where n is the number of divisions on vernier scale.
 
-Therefore, Statement I is true, and Statement II is false."
-27,jee_images/27.png,1,"The length of the line charge is a/2 and the charge density is \lambda. The total charge on the line is Q = \lambda * (a/2) = (\lambda a)/2.
+Therefore, Statement I is true, and Statement II is false.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 27</h2>
+            <div>
+                <img src="jee_images/27.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The length of the line charge is a/2 and the charge density is \lambda. The total charge on the line is Q = \lambda * (a/2) = (\lambda a)/2.
 To apply Gauss's law, we need to enclose the charge. Since the line charge is placed at the center of an edge of the cube, we need 7 more identical cubes to completely enclose the line charge. This creates a larger cube made of 8 smaller cubes. The charge is now completely enclosed in the larger cube. Therefore, according to Gauss's law, the total flux through the eight cubes is given by:
 
 $\Phi_{total} = \frac{Q}{\epsilon_0} = \frac{\lambda a}{2\epsilon_0}$
@@ -855,8 +1297,19 @@ Alternatively:
 Consider eight such cubes surrounding the line charge to completely enclose it.  The total charge enclosed will be  $\lambda a/2$.
 The total flux will be $q/\epsilon_0 = (\lambda a)/(2\epsilon_0)$. Each cube contributes equally to enclosing the charge.  Therefore, the flux through one such cube is $1/4$ of the total flux. Hence it is equal to (\lambda a)/(8\epsilon_0).
 
-Final Answer: 1 — \frac{\lambda a}{8\epsilon_0}"
-28,jee_images/28.png,3,"The potentiometer wire has resistance Rp = 1 \u03a9. The sliding contact is in the middle of the potentiometer wire. Therefore, the resistance on either side of the sliding contact is Rp/2 = 1/2 = 0.5 \u03a9. The external resistance R0 = 2 \u03a9 is connected via the sliding contact. Thus, the circuit is equivalent to a resistance of 0.5 \u03a9 in parallel with a resistance of 2 \u03a9, and this combination is in series with a resistance of 0.5 \u03a9. 
+Final Answer: 1 — \frac{\lambda a}{8\epsilon_0}</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 28</h2>
+            <div>
+                <img src="jee_images/28.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The potentiometer wire has resistance Rp = 1 \u03a9. The sliding contact is in the middle of the potentiometer wire. Therefore, the resistance on either side of the sliding contact is Rp/2 = 1/2 = 0.5 \u03a9. The external resistance R0 = 2 \u03a9 is connected via the sliding contact. Thus, the circuit is equivalent to a resistance of 0.5 \u03a9 in parallel with a resistance of 2 \u03a9, and this combination is in series with a resistance of 0.5 \u03a9. 
 
 The equivalent resistance of the parallel combination is given by: 
 
@@ -868,10 +1321,43 @@ Rtotal = 0.5 + 0.4 = 0.9 \u03a9
 
 The electric current in the circuit is given by Ohm's law: 
 
-I = V / R = 0.9 / 0.9 = 1.0 A"
-29,jee_images/29.png,1,"The fringe width in Young's double slit experiment is given by \(\beta = \frac{\lambda D}{d}\), where \(\lambda\) is the wavelength of light, \(D\) is the distance between the screen and the slits, and \(d\) is the distance between the slits. When the experiment is performed in a denser medium, the wavelength of light decreases because the speed of light decreases, while the frequency remains constant. The refractive index \(n = \frac{c}{v}\), where \(c\) is the speed of light in vacuum and \(v\) is the speed of light in the medium. Also, \(v = f\lambda'\) and \(c = f\lambda\), where \(\lambda'\) is the wavelength in the medium and \(\lambda\) is the wavelength in vacuum.  Therefore, \(n = \frac{f\lambda}{f\lambda'} = \frac{\lambda}{\lambda'}\), which means \(\lambda' = \frac{\lambda}{n}\). Since \(n > 1\), \(\lambda' < \lambda\).  So the fringe width \(\beta' = \frac{\lambda' D}{d} = \frac{\lambda D}{n d} = \frac{\beta}{n}\). Therefore, \(\beta' < \beta\). The fringes come closer. Thus, Assertion (A) is true. Reason (R) is also true because the speed of light reduces in an optically denser medium, while the frequency remains unchanged. Also, reason (R) explains assertion (A) correctly."
-30,jee_images/30.png,2,"According to Stefan-Boltzmann law, the power radiated by a black body is given by P = \(\epsilon\) \( \sigma \) A T^4, where A is the surface area and T is the temperature and \(\epsilon\) is emissivity. Since both bodies are made of the same material, \(\epsilon\) is same. \(\sigma\) is Stefan Boltzmann constant. The area A = 4 \(\pi\) r^2. Therefore, P = \(\epsilon\) \( \sigma \) (4 \(\pi\) r^2) T^4. Since energy radiated depends on power as E = Pt, where t is time. Therefore, E \( \propto \) r^2 T^4. For smaller body: E = k (0.2)^2 (800)^4, where k =  \(\epsilon\) \( \sigma \) (4 \(\pi\) )t. For larger body: E' = k (0.8)^2 (400)^4. Therefore, E'/E = (0.8/0.2)^2 (400/800)^4 = (4)^2 (1/2)^4 = 16 * (1/16) = 1. Thus, E' = E."
-31,jee_images/31.png,2,"The question asks for the total heat required to convert ice at -10°C to steam at 110°C. This process involves several steps:
+I = V / R = 0.9 / 0.9 = 1.0 A</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 29</h2>
+            <div>
+                <img src="jee_images/29.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The fringe width in Young's double slit experiment is given by \(\beta = \frac{\lambda D}{d}\), where \(\lambda\) is the wavelength of light, \(D\) is the distance between the screen and the slits, and \(d\) is the distance between the slits. When the experiment is performed in a denser medium, the wavelength of light decreases because the speed of light decreases, while the frequency remains constant. The refractive index \(n = \frac{c}{v}\), where \(c\) is the speed of light in vacuum and \(v\) is the speed of light in the medium. Also, \(v = f\lambda'\) and \(c = f\lambda\), where \(\lambda'\) is the wavelength in the medium and \(\lambda\) is the wavelength in vacuum.  Therefore, \(n = \frac{f\lambda}{f\lambda'} = \frac{\lambda}{\lambda'}\), which means \(\lambda' = \frac{\lambda}{n}\). Since \(n > 1\), \(\lambda' < \lambda\).  So the fringe width \(\beta' = \frac{\lambda' D}{d} = \frac{\lambda D}{n d} = \frac{\beta}{n}\). Therefore, \(\beta' < \beta\). The fringes come closer. Thus, Assertion (A) is true. Reason (R) is also true because the speed of light reduces in an optically denser medium, while the frequency remains unchanged. Also, reason (R) explains assertion (A) correctly.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 30</h2>
+            <div>
+                <img src="jee_images/30.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>According to Stefan-Boltzmann law, the power radiated by a black body is given by P = \(\epsilon\) \( \sigma \) A T^4, where A is the surface area and T is the temperature and \(\epsilon\) is emissivity. Since both bodies are made of the same material, \(\epsilon\) is same. \(\sigma\) is Stefan Boltzmann constant. The area A = 4 \(\pi\) r^2. Therefore, P = \(\epsilon\) \( \sigma \) (4 \(\pi\) r^2) T^4. Since energy radiated depends on power as E = Pt, where t is time. Therefore, E \( \propto \) r^2 T^4. For smaller body: E = k (0.2)^2 (800)^4, where k =  \(\epsilon\) \( \sigma \) (4 \(\pi\) )t. For larger body: E' = k (0.8)^2 (400)^4. Therefore, E'/E = (0.8/0.2)^2 (400/800)^4 = (4)^2 (1/2)^4 = 16 * (1/16) = 1. Thus, E' = E.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 31</h2>
+            <div>
+                <img src="jee_images/31.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The question asks for the total heat required to convert ice at -10°C to steam at 110°C. This process involves several steps:
 1. Heating the ice from -10°C to 0°C.
 2. Melting the ice at 0°C into water at 0°C.
 3. Heating the water from 0°C to 100°C.
@@ -900,8 +1386,19 @@ Total heat required, Q = Q1 + Q2 + Q3 + Q4 + Q5
 Q = 21 J + 335 J + 418 J + 2250 J + 19.2 J = 3043.2 J
 
 The closest answer is 3043 J.
-"
-32,jee_images/32.png,1,"The radius of the nth orbit of the hydrogen atom is given by:
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 32</h2>
+            <div>
+                <img src="jee_images/32.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The radius of the nth orbit of the hydrogen atom is given by:
 r_n = n^2 * a_0, where a_0 is the Bohr radius (0.529 × 10^(-10) m = 0.0529 nm = 5.3 x 10^(-11) m)
 For the ground state, n = 1, so r_1 = 1^2 * a_0 = a_0 = 5.3 × 10^(-11) m
 For the third excited state, n = 4, so r_4 = 4^2 * a_0 = 16 * a_0 = 16 * 5.3 × 10^(-11) m = 84.8 × 10^(-11) m = 8.48 × 10^(-10) m
@@ -918,8 +1415,19 @@ so, mv = h/λ, substituting it in mvr = nh/2π we get,
 So, λ_1/λ_4 = (2πr_1/1)/(2πr_4/4) = (r_1/1)/(r_4/4) = 4r_1/r_4.
 r_1 = 5.3 × 10^(-11) m and r_4 = 8.48 × 10^(-10) m = 84.8 × 10^(-11) m
 λ_1/λ_4 = 4 * (5.3 × 10^(-11) m) / (84.8 × 10^(-11) m) = 4 * (5.3/84.8) = 4 * (1/16) = 1/4
-"
-33,jee_images/33.png,2,"Let the mass of the original disc be M and radius R. The moment of inertia of the original disc about an axis perpendicular to its plane and passing through its center is given by
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 33</h2>
+            <div>
+                <img src="jee_images/33.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let the mass of the original disc be M and radius R. The moment of inertia of the original disc about an axis perpendicular to its plane and passing through its center is given by
 
 I = (1/2)MR^2
 
@@ -933,8 +1441,19 @@ Now we need to find the moment of inertia of the removed part about the axis of 
 So, \(I_{removed} = MR^2/32 + (M/4)(R/2)^2 = MR^2/32 + MR^2/16 = MR^2/32 + 2MR^2/32 = 3MR^2/32\).
 The moment of inertia of the remaining part is the difference between the moment of inertia of the original disc and the moment of inertia of the removed part:
 \(I_{remaining} = I - I_{removed} = (1/2)MR^2 - (3/32)MR^2 = (16/32)MR^2 - (3/32)MR^2 = (13/32)MR^2\).
-"
-34,jee_images/34.png,3,"To solve this problem, we need to determine the vertical component of the velocity of the electron as it exits the electric field between the plates.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 34</h2>
+            <div>
+                <img src="jee_images/34.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To solve this problem, we need to determine the vertical component of the velocity of the electron as it exits the electric field between the plates.
 
 1. **Given Data:**
    - Length of plates, \( L = 10 \text{ cm} = 0.1 \text{ m} \)
@@ -973,9 +1492,31 @@ The moment of inertia of the remaining part is the difference between the moment
 
 Thus, the vertical component of the velocity of the electron is \( 1.6 \times 10^7 \text{ m/s} \), which matches option (3).
 
-correct_option: 3"
-35,jee_images/35.png,1,"Wire-wound standard resistors are made of alloys like manganin and constantan, which have a low temperature coefficient of resistance. This means their resistivity changes very little with temperature. Thus, the most suitable graph would show a small, nearly linear increase in resistivity with temperature."
-36,jee_images/36.png,3,"To solve this problem, we need to equate the frequencies of the harmonics of the closed and open organ pipes.
+correct_option: 3</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 35</h2>
+            <div>
+                <img src="jee_images/35.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Wire-wound standard resistors are made of alloys like manganin and constantan, which have a low temperature coefficient of resistance. This means their resistivity changes very little with temperature. Thus, the most suitable graph would show a small, nearly linear increase in resistivity with temperature.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 36</h2>
+            <div>
+                <img src="jee_images/36.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To solve this problem, we need to equate the frequencies of the harmonics of the closed and open organ pipes.
 
 ### Given:
 - Length of closed pipe, \( L_c = 10 \text{ cm} \)
@@ -1013,9 +1554,31 @@ correct_option: 3"
 
 Thus, the correct option is:
 
-correct_option: 3"
-37,jee_images/37.png,4,Let the surface mass density of the disc be \( \sigma \) .  \( \sigma = \frac{M}{\pi R^2} \)  The mass of the removed part is \( M' = \sigma \pi (\frac{R}{2})^2 = \frac{M}{\pi R^2} \pi \frac{R^2}{4} = \frac{M}{4} \).  The moment of inertia of the original disc is \( I = \frac{1}{2}MR^2 \).  The moment of inertia of the removed disc about an axis passing through the center of the original disc is calculated using the parallel axis theorem.  \( I' = \frac{1}{2}M'(\frac{R}{2})^2 + M'(\frac{R}{2})^2 = \frac{1}{2} \frac{M}{4} \frac{R^2}{4} + \frac{M}{4} \frac{R^2}{4} = \frac{MR^2}{32} + \frac{MR^2}{16} = \frac{MR^2 + 2MR^2}{32} = \frac{3MR^2}{32} \)  The moment of inertia of the remaining part is:  \( I_{remaining} = I - I' = \frac{1}{2}MR^2 - [\frac{1}{2}(\frac{M}{4})(\frac{R}{2})^2 + (\frac{M}{4})(\frac{R}{2})^2] \)  \( I_{remaining} = \frac{1}{2}MR^2 - \frac{3MR^2}{32} = \frac{16MR^2 - 3MR^2}{32} = \frac{13}{32}MR^2 \)
-38,jee_images/38.png,3,"To solve this problem, we need to calculate the gravitational force before and after removing the spherical part.
+correct_option: 3</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 37</h2>
+            <div>
+                <img src="jee_images/37.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let the surface mass density of the disc be \( \sigma \) .  \( \sigma = \frac{M}{\pi R^2} \)  The mass of the removed part is \( M' = \sigma \pi (\frac{R}{2})^2 = \frac{M}{\pi R^2} \pi \frac{R^2}{4} = \frac{M}{4} \).  The moment of inertia of the original disc is \( I = \frac{1}{2}MR^2 \).  The moment of inertia of the removed disc about an axis passing through the center of the original disc is calculated using the parallel axis theorem.  \( I' = \frac{1}{2}M'(\frac{R}{2})^2 + M'(\frac{R}{2})^2 = \frac{1}{2} \frac{M}{4} \frac{R^2}{4} + \frac{M}{4} \frac{R^2}{4} = \frac{MR^2}{32} + \frac{MR^2}{16} = \frac{MR^2 + 2MR^2}{32} = \frac{3MR^2}{32} \)  The moment of inertia of the remaining part is:  \( I_{remaining} = I - I' = \frac{1}{2}MR^2 - [\frac{1}{2}(\frac{M}{4})(\frac{R}{2})^2 + (\frac{M}{4})(\frac{R}{2})^2] \)  \( I_{remaining} = \frac{1}{2}MR^2 - \frac{3MR^2}{32} = \frac{16MR^2 - 3MR^2}{32} = \frac{13}{32}MR^2 \)</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 38</h2>
+            <div>
+                <img src="jee_images/38.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To solve this problem, we need to calculate the gravitational force before and after removing the spherical part.
 
 ### Initial Force (F₁):
 The gravitational force between the point mass \( m \) and the entire sphere \( M \) is given by:
@@ -1062,10 +1625,43 @@ This simplifies to approximately \( 12 : 11 \).
 
 Therefore, the correct option is:
 
-correct_option: 3"
-39,jee_images/39.png,2,"The work function of Cs is 1.9 eV and that of Li is 2.5 eV. The wavelength of the incident light is 550 nm. We need to calculate the energy of the incident light in eV. The energy of a photon is given by E = hc/\lambda, where h is Planck's constant, c is the speed of light, and \lambda is the wavelength.  Using the approximation hc = 1240 eV.nm, we get E = 1240 eV.nm / 550 nm = 2.25 eV. For photoelectric effect to occur, the energy of the incident photon must be greater than the work function of the metal.  For Cs, the work function is 1.9 eV, and the photon energy is 2.25 eV, so photoelectric effect is possible.  For Li, the work function is 2.5 eV, and the photon energy is 2.25 eV, so photoelectric effect is not possible. Therefore, photoelectric effect is possible only for Cs."
-40,jee_images/40.png,2,"We know that the force on a current carrying wire in a magnetic field is given by F = BIL, where B is the magnetic field, I is the current, and L is the length of the wire. Therefore, the dimensions of B are [B] = [F] / ([I][L]) = MLT^-2 / AL = MT^-2A^-1. Also, we know that the permeability of free space, \u03bc_0, appears in the formula for the force between two parallel current-carrying wires: F/L = (\u03bc_0 * I_1 * I_2) / (2*pi*d), where d is the distance between the wires. Therefore, the dimensions of \u03bc_0 are [\u03bc_0] = [F] / ([I]^2) = MLT^-2 / A^2. Now, we want to find the dimensions of B / \u03bc_0. [B / \u03bc_0] = [B] / [\u03bc_0] = (MT^-2A^-1) / (MLT^-2A^-2) = A.  However, none of the given options matches A. Let's re-examine the dimensions of \u03bc_0. From F = BIL,  B = F/(IL). Also, F = qvB, so B = F/(qv). The dimensions of B are [B] = MLT^-2/(AT)L = MT^-2A^-1. From Ampere's law, \oint B.dl = \u03bc_0 * I, which means \u03bc_0 = B*L/I, so [\u03bc_0] = (MT^-2A^-1)L/A = MLT^-2A^-2. Then [B/\u03bc_0] = (MT^-2A^-1)/(MLT^-2A^-2) = A/L = L^-1A. Therefore, option 2 is the closest answer."
-41,jee_images/41.png,1,"To solve this problem, we need to apply the principle of conservation of mechanical energy between the points B and C.
+correct_option: 3</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 39</h2>
+            <div>
+                <img src="jee_images/39.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The work function of Cs is 1.9 eV and that of Li is 2.5 eV. The wavelength of the incident light is 550 nm. We need to calculate the energy of the incident light in eV. The energy of a photon is given by E = hc/\lambda, where h is Planck's constant, c is the speed of light, and \lambda is the wavelength.  Using the approximation hc = 1240 eV.nm, we get E = 1240 eV.nm / 550 nm = 2.25 eV. For photoelectric effect to occur, the energy of the incident photon must be greater than the work function of the metal.  For Cs, the work function is 1.9 eV, and the photon energy is 2.25 eV, so photoelectric effect is possible.  For Li, the work function is 2.5 eV, and the photon energy is 2.25 eV, so photoelectric effect is not possible. Therefore, photoelectric effect is possible only for Cs.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 40</h2>
+            <div>
+                <img src="jee_images/40.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>We know that the force on a current carrying wire in a magnetic field is given by F = BIL, where B is the magnetic field, I is the current, and L is the length of the wire. Therefore, the dimensions of B are [B] = [F] / ([I][L]) = MLT^-2 / AL = MT^-2A^-1. Also, we know that the permeability of free space, \u03bc_0, appears in the formula for the force between two parallel current-carrying wires: F/L = (\u03bc_0 * I_1 * I_2) / (2*pi*d), where d is the distance between the wires. Therefore, the dimensions of \u03bc_0 are [\u03bc_0] = [F] / ([I]^2) = MLT^-2 / A^2. Now, we want to find the dimensions of B / \u03bc_0. [B / \u03bc_0] = [B] / [\u03bc_0] = (MT^-2A^-1) / (MLT^-2A^-2) = A.  However, none of the given options matches A. Let's re-examine the dimensions of \u03bc_0. From F = BIL,  B = F/(IL). Also, F = qvB, so B = F/(qv). The dimensions of B are [B] = MLT^-2/(AT)L = MT^-2A^-1. From Ampere's law, \oint B.dl = \u03bc_0 * I, which means \u03bc_0 = B*L/I, so [\u03bc_0] = (MT^-2A^-1)L/A = MLT^-2A^-2. Then [B/\u03bc_0] = (MT^-2A^-1)/(MLT^-2A^-2) = A/L = L^-1A. Therefore, option 2 is the closest answer.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 41</h2>
+            <div>
+                <img src="jee_images/41.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To solve this problem, we need to apply the principle of conservation of mechanical energy between the points B and C.
 
 1. **At Point B:**
    - The bob is at the lowest point of its swing, so its potential energy is zero.
@@ -1101,8 +1697,19 @@ correct_option: 3"
 
 Thus, the ratio of the kinetic energy of the bob at the points B and C is 2.
 
-correct_option: 1"
-42,jee_images/42.png,4,"Let's analyze the two statements regarding non-ideal batteries connected in parallel.
+correct_option: 1</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 42</h2>
+            <div>
+                <img src="jee_images/42.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let's analyze the two statements regarding non-ideal batteries connected in parallel.
 
 Statement I: The equivalent emf of two non-ideal batteries connected in parallel is smaller than either of the two emfs.
 
@@ -1124,8 +1731,19 @@ Similarly, r2 - Req = r2 - (r1 * r2) / (r1 + r2) = (r2*r1 + r2^2 - r1*r2) / (r1 
 Therefore, the equivalent internal resistance is indeed smaller than either of the two internal resistances. Thus, statement II is true.
 
 Since Statement I is false and Statement II is true, the correct option is (4).
-"
-43,jee_images/43.png,3,"To determine if a diode is forward biased, the anode must be at a higher potential than the cathode.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 43</h2>
+            <div>
+                <img src="jee_images/43.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To determine if a diode is forward biased, the anode must be at a higher potential than the cathode.
 
 Let's analyze each circuit:
 
@@ -1147,14 +1765,36 @@ Option 3: (B), (C) and (E) only
 
 This matches our analysis.
 
-correct_option: 3"
-44,jee_images/44.png,3,"The initial capacitance is C = 40 \u03bcF, and the voltage is V = 100 V.  When a dielectric with K=2 is inserted, the capacitance becomes C' = KC = 2 * 40 \u03bcF = 80 \u03bcF.  
+correct_option: 3</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 44</h2>
+            <div>
+                <img src="jee_images/44.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The initial capacitance is C = 40 \u03bcF, and the voltage is V = 100 V.  When a dielectric with K=2 is inserted, the capacitance becomes C' = KC = 2 * 40 \u03bcF = 80 \u03bcF.  
 The initial charge is Q = CV = 40 \u03bcF * 100 V = 4 mC.  The new charge is Q' = C'V = 80 \u03bcF * 100 V = 8 mC.  The extra charge is \u0394Q = Q' - Q = 8 mC - 4 mC = 4 mC.
 
 The initial energy is U = (1/2)CV^2 = (1/2) * 40 \u03bcF * (100 V)^2 = 0.2 J.  The new energy is U' = (1/2)C'V^2 = (1/2) * 80 \u03bcF * (100 V)^2 = 0.4 J.  The change in electrostatic energy is \u0394U = U' - U = 0.4 J - 0.2 J = 0.2 J.
 
-Therefore, the extra charge is 4 mC, and the change in electrostatic energy is 0.2 J."
-45,jee_images/45.png,4,"To solve this problem, we need to consider the lens and the mirror effect together. The lens is a thin convex lens with both sides having a radius of curvature \( R \) and a refractive index \( \mu \). One side is polished for complete reflection, effectively making it a mirror.
+Therefore, the extra charge is 4 mC, and the change in electrostatic energy is 0.2 J.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 45</h2>
+            <div>
+                <img src="jee_images/45.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To solve this problem, we need to consider the lens and the mirror effect together. The lens is a thin convex lens with both sides having a radius of curvature \( R \) and a refractive index \( \mu \). One side is polished for complete reflection, effectively making it a mirror.
 
 ### Step 1: Calculate the focal length of the lens
 
@@ -1204,8 +1844,19 @@ u = \frac{R}{2\mu - 1}
 
 Thus, the correct option is:
 
-**Option 4: \( \frac{R}{2\mu - 1} \)**"
-46,jee_images/46.png,4,"To find the radius of curvature of the common surface when two soap bubbles are in contact, we use the formula for the radius of curvature \( R \) of the common surface:
+**Option 4: \( \frac{R}{2\mu - 1} \)**</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 46</h2>
+            <div>
+                <img src="jee_images/46.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To find the radius of curvature of the common surface when two soap bubbles are in contact, we use the formula for the radius of curvature \( R \) of the common surface:
 
 \[
 R = \frac{r_1 \cdot r_2}{r_2 - r_1}
@@ -1225,8 +1876,19 @@ R = \frac{2 \cdot 4}{4 - 2} = \frac{8}{2} = 4 \text{ cm}
 
 Thus, the radius of curvature of the common surface is 4 cm.
 
-final_answer: 4"
-47,jee_images/47.png,8,"Given: Radius of curvature of the convex mirror, R = 2 m. Therefore, the focal length is f = R/2 = 1 m.
+final_answer: 4</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 47</h2>
+            <div>
+                <img src="jee_images/47.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 8</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Given: Radius of curvature of the convex mirror, R = 2 m. Therefore, the focal length is f = R/2 = 1 m.
 Object distance, u = -24 m. Speed of the object (car approaching), v_o = 90 km/hr = 90 * (5/18) m/s = 25 m/s.
 
 Using the mirror formula: 1/v + 1/u = 1/f
@@ -1255,8 +1917,19 @@ Substituting the values: f = 1, v_o = 25 m/s, u = -24 m
 a_i = -2 * (1)^2 * (25)^2 / (-24 - 1)^3 = -2 * 625 / (-25)^3 = -2 * 625 / (-15625) = 2 * 625 / 15625 = 2 / 25 = 0.08 m/s^2
 
 The magnitude of acceleration of the image, a = |a_i| = 0.08 m/s^2
-Therefore, 100a = 100 * 0.08 = 8"
-48,jee_images/48.png,40,"Let the thermal conductivity of the three conductors be $k_1, k_2$ and $k_3$. Let the area of cross-section of conductor 1 and 2 be A, and the area of cross-section of conductor 3 be 2A. Let the length of the three conductors be L. In steady state, the heat current through the parallel combination of conductors 1 and 2 must be equal to the heat current through conductor 3.
+Therefore, 100a = 100 * 0.08 = 8</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 48</h2>
+            <div>
+                <img src="jee_images/48.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 40</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let the thermal conductivity of the three conductors be $k_1, k_2$ and $k_3$. Let the area of cross-section of conductor 1 and 2 be A, and the area of cross-section of conductor 3 be 2A. Let the length of the three conductors be L. In steady state, the heat current through the parallel combination of conductors 1 and 2 must be equal to the heat current through conductor 3.
 
 $$H_1 + H_2 = H_3$$
 $$\frac{k_1 A (100 - \theta)}{L} + \frac{k_2 A (100 - \theta)}{L} = \frac{k_3 (2A) (\theta - 0)}{L}$$
@@ -1269,8 +1942,19 @@ Given $k_1 = 60 \text{ Js}^{-1} \text{m}^{-1} \text{K}^{-1}$, $k_2 = 120 \text{ 
 
 $$\theta = \frac{(60 + 120) 100}{2(135) + 60 + 120} = \frac{18000}{270 + 180} = \frac{18000}{450} = \frac{1800}{45} = 40$$
 
-Therefore, the value of $\theta$ is 40 °C."
-49,jee_images/49.png,3,"To solve this problem, we need to find the angular momentum of particle A with respect to the position of particle B at t = 1 s.
+Therefore, the value of $\theta$ is 40 °C.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 49</h2>
+            <div>
+                <img src="jee_images/49.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To solve this problem, we need to find the angular momentum of particle A with respect to the position of particle B at t = 1 s.
 
 ### Step 1: Find the velocity vectors
 
@@ -1338,8 +2022,19 @@ Given that \(|\vec{L}| = \sqrt{L}\), we have:
 
 Thus, the value of \(L\) is 242.
 
-correct_option: 3"
-50,jee_images/50.png,5,"Let the initial velocity be u = 60 m/s and the angle of projection be θ = 30°.  
+correct_option: 3</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 50</h2>
+            <div>
+                <img src="jee_images/50.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 5</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let the initial velocity be u = 60 m/s and the angle of projection be θ = 30°.  
 The vertical component of the initial velocity is u_y = u sin(θ) = 60 * sin(30°) = 60 * (1/2) = 30 m/s.  
 The acceleration due to gravity is g = 10 m/s².  
 
@@ -1352,18 +2047,62 @@ Therefore h_1= 10(1) - (1/2)(10)(1)^2 = 10-5= 5m
 So, h_1 = 5m.
 
 The ratio h_0 : h_1 = 25 : 5 = 5 : 1.
-"
-51,jee_images/51.png,3,"The mass of a substance deposited at an electrode during electrolysis is given by Faraday's law of electrolysis:  m = (M * I * t) / (n * F)  where: m = mass of the substance deposited M = molar mass of the substance I = current (in amperes) t = time (in seconds) n = number of electrons involved in the reaction F = Faraday constant (96500 C/mol)  In this case, we have: M = 27 g/mol (molar mass of aluminium) I = 2 A t = 30 minutes = 30 * 60 = 1800 seconds n = 3 (since Al3+ + 3e- -> Al) F = 96500 C/mol  Plugging in the values, we get: m = (27 * 2 * 1800) / (3 * 96500) = (27 * 2 * 18) / (3 * 965) = (9 * 2 * 18) / 965 = 324 / 965 ≈ 0.3357 g  Comparing our result to the options given, we see that it is closest to 0.336 g. Thus, the correct option is (3)."
-52,jee_images/52.png,3,"Let's analyze each statement:
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 51</h2>
+            <div>
+                <img src="jee_images/51.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The mass of a substance deposited at an electrode during electrolysis is given by Faraday's law of electrolysis:  m = (M * I * t) / (n * F)  where: m = mass of the substance deposited M = molar mass of the substance I = current (in amperes) t = time (in seconds) n = number of electrons involved in the reaction F = Faraday constant (96500 C/mol)  In this case, we have: M = 27 g/mol (molar mass of aluminium) I = 2 A t = 30 minutes = 30 * 60 = 1800 seconds n = 3 (since Al3+ + 3e- -> Al) F = 96500 C/mol  Plugging in the values, we get: m = (27 * 2 * 1800) / (3 * 96500) = (27 * 2 * 18) / (3 * 965) = (9 * 2 * 18) / 965 = 324 / 965 ≈ 0.3357 g  Comparing our result to the options given, we see that it is closest to 0.336 g. Thus, the correct option is (3).</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 52</h2>
+            <div>
+                <img src="jee_images/52.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let's analyze each statement:
 (1) After one half-life, the amount of radioactive substance remaining is 1/2 of the original amount. After two half-lives, it's (1/2)*(1/2) = 1/4. After three half-lives, it's (1/2)*(1/2)*(1/2) = 1/8. So, statement (1) is true.
 (2) The decay constant is a property of the radioactive nuclide and is independent of external conditions like temperature. So, statement (2) is true.
 (3) This statement contradicts statement (2). Decay constant does not depend upon the temperature. Thus, statement (3) is false.
-(4) Half-life (T1/2) is related to the decay constant (\u03bb) by the equation T1/2 = ln(2) / \u03bb. So, T1/2 is ln(2) times 1/\u03bb, where \u03bb is the rate constant. Therefore, statement (4) is true."
-53,jee_images/53.png,4,"The given molecule is CH3-CH(OH)-CH=CH-CH3. 
+(4) Half-life (T1/2) is related to the decay constant (\u03bb) by the equation T1/2 = ln(2) / \u03bb. So, T1/2 is ln(2) times 1/\u03bb, where \u03bb is the rate constant. Therefore, statement (4) is true.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 53</h2>
+            <div>
+                <img src="jee_images/53.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The given molecule is CH3-CH(OH)-CH=CH-CH3. 
 It has one chiral center (the carbon with the OH group) and one double bond that can exhibit geometric isomerism (cis/trans). Therefore the number of stereoisomers will be 2 * 2 = 4.
 The chiral carbon gives rise to two enantiomers. The double bond gives rise to two geometrical isomers(cis and trans).
-The total number of stereoisomers possible is 2(due to chiral carbon) * 2(due to geometrical isomers) = 4"
-54,jee_images/54.png,1,"Electronegativity generally increases across a period (from left to right) and decreases down a group in the periodic table.
+The total number of stereoisomers possible is 2(due to chiral carbon) * 2(due to geometrical isomers) = 4</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 54</h2>
+            <div>
+                <img src="jee_images/54.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Electronegativity generally increases across a period (from left to right) and decreases down a group in the periodic table.
 
 Let's analyze each option:
 
@@ -1397,8 +2136,19 @@ So, Al < Mg < B < N is an incorrect order.
    This order is correct because electronegativity increases as we move from left to right and up in the periodic table. Chlorine is more electronegative than sulfur. Oxygen is more electronegative than chlorine. Fluorine is the most electronegative element.
 
 Therefore, the incorrect order is option 1.
-"
-55,jee_images/55.png,1,"To find which lanthanoid ions have a 4f^7 configuration, we need to consider the electronic configurations of the neutral atoms and then remove the appropriate number of electrons to form the ions.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 55</h2>
+            <div>
+                <img src="jee_images/55.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To find which lanthanoid ions have a 4f^7 configuration, we need to consider the electronic configurations of the neutral atoms and then remove the appropriate number of electrons to form the ions.
 
 (A) Eu2+: Europium (Eu) has an atomic number of 63. Its electronic configuration is [Xe] 4f^7 6s^2. When it forms Eu2+, it loses two electrons from the 6s orbital, resulting in the configuration [Xe] 4f^7. So, Eu2+ has a 4f^7 configuration.
 
@@ -1425,8 +2175,19 @@ Therefore, option (1) is correct since both (A) and (B) have f7 configuration
 Samarium = [Xe] 4f^6 6s^2, Sm+ = [Xe]4f^6 6s^1 and Sm2+ = [Xe]4f^6.
 However, in the prompt (E) = Sm2+, where the configuration is [Xe]4f^7. The assumption here is Sm is at -1 oxidation state before losing electron. Since problem states lanthanoid ion, assume here only Sm is existing at -1 oxidation state where configuration [Xe]4f^7 6s^2. Now, Sm2+ will become [Xe]4f^7, thus, option (3) is also likely to be true. But, given that only one answer can be right, option (1) is more reasonable to choose since here both are at +2 and +3 oxidation state respectively.
 
-"
-56,jee_images/56.png,3,"Let's analyze each option in List-I and match them to the appropriate properties in List-II.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 56</h2>
+            <div>
+                <img src="jee_images/56.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let's analyze each option in List-I and match them to the appropriate properties in List-II.
 
 (A) Al3+ < Mg2+ < Na+ < F-:  This order represents the increasing ionic radii.  Higher positive charge reduces the ionic radius, and negative charge increases it. Thus, A matches with IV.
 
@@ -1442,15 +2203,48 @@ B - I
 C - II
 D - III
 
-This corresponds to option (3)."
-57,jee_images/57.png,3,"Ascorbic acid is Vitamin C. Adipic acid is a dicarboxylic acid used in the production of nylon. Aspartic acid is an amino acid. Saccharic acid is an oxidized form of sugar.
-Therefore, Ascorbic acid is a vitamin."
-58,jee_images/58.png,1,"The vessel is thermally insulated, so there is no heat exchange with the surroundings. Therefore, q = 0.
+This corresponds to option (3).</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 57</h2>
+            <div>
+                <img src="jee_images/57.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Ascorbic acid is Vitamin C. Adipic acid is a dicarboxylic acid used in the production of nylon. Aspartic acid is an amino acid. Saccharic acid is an oxidized form of sugar.
+Therefore, Ascorbic acid is a vitamin.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 58</h2>
+            <div>
+                <img src="jee_images/58.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The vessel is thermally insulated, so there is no heat exchange with the surroundings. Therefore, q = 0.
 Mechanical stirring from outside means work is done on the system. Therefore, w > 0.
 According to the first law of thermodynamics, \(\Delta U = q + w\). Since q = 0 and w > 0, it follows that \(\Delta U > 0\).
 
-Thus, \(\Delta U > 0\), q = 0, and w > 0."
-59,jee_images/59.png,4,"The radius of an orbit is given by the formula:
+Thus, \(\Delta U > 0\), q = 0, and w > 0.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 59</h2>
+            <div>
+                <img src="jee_images/59.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The radius of an orbit is given by the formula:
 r = a0 * (n^2 / Z)
 where a0 is the Bohr radius (radius of the first stationary state of hydrogen atom), n is the principal quantum number, and Z is the atomic number.
 
@@ -1459,13 +2253,35 @@ For the first excited state, n = 2. For Helium ion (He+), Z = 2.
 Therefore, the radius of the first excited state of He+ is:
 r = a0 * (2^2 / 2) = a0 * (4 / 2) = 2a0
 
-Comparing our result with the given options, we find that option 4 matches our calculated answer."
-60,jee_images/60.png,4,"Statement I: $${\text{CH}}_{3}-{\text{O}}-{\text{CH}}_{2}-{\text{Cl}}$$ will undergo $${\text{S}}_{N}1$$ reaction though it is a primary halide. The carbocation formed after the departure of $${\text{Cl}}^{-}$$ i.e. $${\text{CH}}_{3}-{\text{O}}-{\text{CH}}_{2}^{+}$$ is resonance stabilized, hence $${\text{S}}_{N}1$$ reaction is possible.
+Comparing our result with the given options, we find that option 4 matches our calculated answer.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 60</h2>
+            <div>
+                <img src="jee_images/60.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Statement I: $${\text{CH}}_{3}-{\text{O}}-{\text{CH}}_{2}-{\text{Cl}}$$ will undergo $${\text{S}}_{N}1$$ reaction though it is a primary halide. The carbocation formed after the departure of $${\text{Cl}}^{-}$$ i.e. $${\text{CH}}_{3}-{\text{O}}-{\text{CH}}_{2}^{+}$$ is resonance stabilized, hence $${\text{S}}_{N}1$$ reaction is possible.
 
 Statement II: $${{\text{(CH}}_{	ext{3}}	ext{)}}_{	ext{3}}{\text{CCH}}_{	ext{2}}{\text{Cl}}$$ will not undergo $${\text{S}}_{N}2$$ reaction very easily though it is a primary halide. Due to steric crowding caused by three methyl groups at beta carbon, $${\text{S}}_{N}2$$ reaction is hindered.
 
-Therefore, both statements are correct."
-61,jee_images/61.png,1,"Statement I: Propyne ($CH_3C≡CH$) has one acidic hydrogen. When it reacts with sodium, the following reaction occurs: 
+Therefore, both statements are correct.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 61</h2>
+            <div>
+                <img src="jee_images/61.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Statement I: Propyne ($CH_3C≡CH$) has one acidic hydrogen. When it reacts with sodium, the following reaction occurs: 
 $CH_3C≡CH + Na → CH_3C≡CNa + \frac{1}{2}H_2$
 So, one mole of propyne liberates 0.5 moles of hydrogen gas. Thus, statement I is correct.
 Statement II: The molar mass of propyne ($CH_3C≡CH$) is 12(3) + 1(4) = 36 + 4 = 40 g/mol. 
@@ -1477,8 +2293,19 @@ Therefore, 0.1 moles of propyne gives 0.1 moles of $NH_3$.
 At STP, 1 mole of any gas occupies 22.4 L or 22400 mL.
 Therefore, 0.1 moles of $NH_3$ occupies 0.1 * 22400 mL = 2240 mL.
 The statement says that the volume occupied is 224 mL, which is incorrect. Thus, statement II is incorrect.
-"
-62,jee_images/62.png,2,"The reaction is: $CO_2(g) + C(s) \rightleftharpoons 2CO(g)$.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 62</h2>
+            <div>
+                <img src="jee_images/62.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The reaction is: $CO_2(g) + C(s) \rightleftharpoons 2CO(g)$.
 Initial pressure: 0.5 atm (of $CO_2$) and 0 atm (of $CO$)
 At equilibrium: (0.5 - x) atm (of $CO_2$) and 2x atm (of $CO$)
 Total pressure at equilibrium = (0.5 - x) + 2x = 0.5 + x
@@ -1487,8 +2314,19 @@ So, 0.5 + x = 0.8
 x = 0.8 - 0.5 = 0.3 atm
 Therefore, at equilibrium, the partial pressure of $CO_2$ = 0.5 - 0.3 = 0.2 atm, and the partial pressure of $CO$ = 2 * 0.3 = 0.6 atm
 Now, we can calculate the equilibrium constant Kp:
-$K_p = \frac{(P_{CO})^2}{P_{CO_2}} = \frac{(0.6)^2}{0.2} = \frac{0.36}{0.2} = 1.8$ atm"
-63,jee_images/63.png,4,"The given compound has two functional groups: -COOH (carboxylic acid) and -COOCH3 (ester). Carboxylic acid takes priority over ester in IUPAC nomenclature. Therefore, the main chain must include the carbon of the -COOH group, and the numbering should start from the carbon of the -COOH group.
+$K_p = \frac{(P_{CO})^2}{P_{CO_2}} = \frac{(0.6)^2}{0.2} = \frac{0.36}{0.2} = 1.8$ atm</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 63</h2>
+            <div>
+                <img src="jee_images/63.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The given compound has two functional groups: -COOH (carboxylic acid) and -COOCH3 (ester). Carboxylic acid takes priority over ester in IUPAC nomenclature. Therefore, the main chain must include the carbon of the -COOH group, and the numbering should start from the carbon of the -COOH group.
 
 The parent chain is hexane. The substituents are at positions 2 and 5. At position 2, there is a methyl group. At position 5, there is a methoxycarbonyl group.
 So, the IUPAC name is 6-Methoxycarbonyl-2-methylhexanoic acid.
@@ -1516,14 +2354,36 @@ Let's analyze the given options:
 None of the options exactly match, however, Option 4 is the closest but should have 'methyl' instead of 'dimethyl'.
 
 Upon closer inspection of the compound, it has only ONE methyl group and the numbering is such that -COOH will have the priority. Thus, the IUPAC name must end in -oic acid. And since COOCH3 group is on the 6th carbon, so it will be termed methoxycarbonyl.
-The correct IUPAC name is : 6-(methoxycarbonyl)-2-methylhexanoic acid. Based on the given options, option (4) is the closest answer."
-64,jee_images/64.png,3,"The formation of H2S2O8 (peroxodisulfuric acid) by electrolysis occurs at the anode. In the electrolysis of concentrated sulfuric acid, the following reaction occurs at the anode:
+The correct IUPAC name is : 6-(methoxycarbonyl)-2-methylhexanoic acid. Based on the given options, option (4) is the closest answer.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 64</h2>
+            <div>
+                <img src="jee_images/64.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The formation of H2S2O8 (peroxodisulfuric acid) by electrolysis occurs at the anode. In the electrolysis of concentrated sulfuric acid, the following reaction occurs at the anode:
 
 2HSO4- (aq) -> H2S2O8 (aq) + 2e-
 
 Therefore, concentrated sulfuric acid is used to obtain H2S2O8.
-"
-65,jee_images/65.png,2,"Fehling's test is a chemical test used to differentiate between aldehyde and ketone functional groups. Aldehydes are oxidized by Fehling's solution, indicated by the formation of a red precipitate of cuprous oxide ($Cu_2O$). Ketones do not react, except for alpha-hydroxy ketones.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 65</h2>
+            <div>
+                <img src="jee_images/65.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Fehling's test is a chemical test used to differentiate between aldehyde and ketone functional groups. Aldehydes are oxidized by Fehling's solution, indicated by the formation of a red precipitate of cuprous oxide ($Cu_2O$). Ketones do not react, except for alpha-hydroxy ketones.
 
 (A) Benzaldehyde (C6H5CHO) gives a positive Fehling's test because it is an aldehyde.
 (B) Phenyl methyl ketone (C6H5COCH3) does not give a positive Fehling's test because it is a ketone.
@@ -1532,8 +2392,19 @@ Therefore, concentrated sulfuric acid is used to obtain H2S2O8.
 (E) (C6H5CH2CHO) gives a positive Fehling's test because it is an aldehyde.
 
 Therefore, compounds A, C, D, and E give positive Fehling's tests. Comparing this to the given options, the correct option is (2).
-"
-66,jee_images/66.png,4,"CFSE, \(\Delta_0\), will be zero for complexes with either \(d^0\), \(d^5\) (weak field), or \(d^{10}\) configurations. Let's examine each complex:
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 66</h2>
+            <div>
+                <img src="jee_images/66.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 4</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>CFSE, \(\Delta_0\), will be zero for complexes with either \(d^0\), \(d^5\) (weak field), or \(d^{10}\) configurations. Let's examine each complex:
 
 (1) \([Fe(NH_3)_6]Br_2\):  The oxidation state of Fe is +2.  Fe is in group 8, so \(Fe^{2+}\) has a \(d^6\) configuration.  Since \(NH_3\) is a strong field ligand, this will result in a low spin complex.  The CFSE is not zero.
 
@@ -1543,8 +2414,19 @@ Therefore, compounds A, C, D, and E give positive Fehling's tests. Comparing thi
 
 (4) \(K_3[Fe(SCN)_6]\): The oxidation state of Fe is +3.  \(Fe^{3+}\) has a \(d^5\) configuration.  \(SCN^-\) is a weak field ligand, so it forms a high spin complex. In a high spin \(d^5\) complex, the electronic configuration is \(t_{2g}^3 e_g^2\). The CFSE is \(3(-\frac{2}{5} \Delta_0) + 2(\frac{3}{5}\Delta_0) = -\frac{6}{5}\Delta_0 + \frac{6}{5}\Delta_0 = 0\).
 
-Thus, the CFSE for complex (4) is zero."
-67,jee_images/67.png,1,"The elevation in boiling point is a colligative property, meaning it depends on the number of solute particles in the solution.  
+Thus, the CFSE for complex (4) is zero.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 67</h2>
+            <div>
+                <img src="jee_images/67.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The elevation in boiling point is a colligative property, meaning it depends on the number of solute particles in the solution.  
 NaCl is an ionic compound that dissociates into two ions (Na+ and Cl-) in solution. Urea is a non-electrolyte, so it does not dissociate.
 
 (i) 10^-4 M NaCl: Since NaCl dissociates into 2 ions, the effective concentration of particles is 2 * 10^-4 M.
@@ -1555,16 +2437,49 @@ NaCl is an ionic compound that dissociates into two ions (Na+ and Cl-) in soluti
 Now we can compare the effective concentrations:
 Urea (10^-4 M) < NaCl (10^-4 M) < NaCl (10^-3 M) < NaCl (10^-2 M)
 (ii) < (i) < (iii) < (iv)
-"
-68,jee_images/68.png,3,"The reaction sequence starts with nitrobenzene. 
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 68</h2>
+            <div>
+                <img src="jee_images/68.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 3</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The reaction sequence starts with nitrobenzene. 
 Step 1: Bromination in the presence of acetic acid (AcOH) which is a mild Lewis acid. Since the nitro group (-NO2) is a meta-directing group, the bromine will attach at the meta position to the nitro group. 
 Step 2: Reduction of the nitro group (-NO2) to an amino group (-NH2) using Sn/HCl. 
 Step 3: Diazotization of the amino group (-NH2) with NaNO2/HCl at 273K to form a diazonium salt. This diazonium salt is unstable. 
-Step 4: Treatment with ethanol (C2H5OH) leads to the replacement of the diazonium group with a hydrogen atom. Thus, the final product A is 3-bromophenol. The other product B will be acetaldehyde, CH3CHO. Since the diazonium salt can react with ethanol to give benzene and acetaldehyde. Bromine is present at the 3rd position."
-69,jee_images/69.png,2,"Let's analyze each complex:  \n1. $$[NiCl_4]^{2-}$$:  Ni is in the +2 oxidation state. The electronic configuration of $$Ni^{2+}$$ is $$[Ar]3d^8$$. Since $$Cl^-$$ is a weak field ligand, it does not cause pairing of electrons. Therefore, the complex will have 2 unpaired electrons, making it paramagnetic. With 4 ligands, the geometry is tetrahedral. Thus, $$[NiCl_4]^{2-}$$ is tetrahedral and paramagnetic.\n\n2. $$[Ni(CO)_4]$$: Ni is in the 0 oxidation state. The electronic configuration of $$Ni$$ is $$[Ar]3d^84s^2$$. CO is a strong field ligand, and it causes pairing of electrons and forces the 4s electrons into the 3d orbitals. As a result, there are no unpaired electrons, making the complex diamagnetic. With 4 ligands, the geometry is tetrahedral. Thus, $$[Ni(CO)_4]$$ is tetrahedral and diamagnetic. Also Ni has zero oxidation state here.\nTherefore, the correct option is:
+Step 4: Treatment with ethanol (C2H5OH) leads to the replacement of the diazonium group with a hydrogen atom. Thus, the final product A is 3-bromophenol. The other product B will be acetaldehyde, CH3CHO. Since the diazonium salt can react with ethanol to give benzene and acetaldehyde. Bromine is present at the 3rd position.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 69</h2>
+            <div>
+                <img src="jee_images/69.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 2</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let's analyze each complex:  \n1. $$[NiCl_4]^{2-}$$:  Ni is in the +2 oxidation state. The electronic configuration of $$Ni^{2+}$$ is $$[Ar]3d^8$$. Since $$Cl^-$$ is a weak field ligand, it does not cause pairing of electrons. Therefore, the complex will have 2 unpaired electrons, making it paramagnetic. With 4 ligands, the geometry is tetrahedral. Thus, $$[NiCl_4]^{2-}$$ is tetrahedral and paramagnetic.\n\n2. $$[Ni(CO)_4]$$: Ni is in the 0 oxidation state. The electronic configuration of $$Ni$$ is $$[Ar]3d^84s^2$$. CO is a strong field ligand, and it causes pairing of electrons and forces the 4s electrons into the 3d orbitals. As a result, there are no unpaired electrons, making the complex diamagnetic. With 4 ligands, the geometry is tetrahedral. Thus, $$[Ni(CO)_4]$$ is tetrahedral and diamagnetic. Also Ni has zero oxidation state here.\nTherefore, the correct option is:
 $$[NiCl_4]^{2-}$$: $$Ni^{II}$$, tetrahedral
-$$[Ni(CO)_4]$$: Ni(0), tetrahedral"
-70,jee_images/70.png,1,"Let's analyze each statement regarding geometrical isomerism:
+$$[Ni(CO)_4]$$: Ni(0), tetrahedral</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 70</h2>
+            <div>
+                <img src="jee_images/70.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 1</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let's analyze each statement regarding geometrical isomerism:
 (A) Propene (CH3-CH=CH2) does not show geometrical isomerism because one of the carbon atoms in the double bond has two identical hydrogen atoms attached to it.  For geometrical isomerism to occur, each carbon atom in the double bond must have two different groups attached to it. Thus, statement (A) is incorrect.
 (B) Trans isomer has identical atoms/groups on the opposite sides of the double bond. This statement is correct.
 (C) Cis-but-2-ene has a higher dipole moment than trans-but-2-ene. This is generally true because in the cis isomer, the dipole moments of the C-CH3 bonds add up, whereas in the trans isomer, they cancel each other out. Thus, statement (C) is correct.
@@ -1572,8 +2487,19 @@ $$[Ni(CO)_4]$$: Ni(0), tetrahedral"
 (E) Trans-isomer has a lower melting point than cis-isomer. This statement is generally correct because cis isomers have a more compact structure, leading to stronger intermolecular forces and hence higher melting points compared to the trans isomers. Thus, statement (E) is incorrect.
 
 The incorrect statements are (A), (D), and (E).
-So, the correct option is (1)."
-71,jee_images/71.png,45,"Let's denote the number of moles of $$Ca(OH)_2$$ initially present as $$n$$. The reaction between $$CO_2$$ and $$Ca(OH)_2$$ is given by:
+So, the correct option is (1).</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 71</h2>
+            <div>
+                <img src="jee_images/71.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 45</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>Let's denote the number of moles of $$Ca(OH)_2$$ initially present as $$n$$. The reaction between $$CO_2$$ and $$Ca(OH)_2$$ is given by:
 $$CO_2 + Ca(OH)_2 \rightarrow CaCO_3 + H_2O$$
 According to the problem statement, the entire amount of $$CO_2$$ reacted with exactly half the initial amount of $$Ca(OH)_2$$. Thus, the number of moles of $$CO_2$$ is $$\frac{n}{2}$$.
 The unreacted $$Ca(OH)_2$$ is then neutralized with $$HCl$$ according to the following reaction:
@@ -1594,8 +2520,19 @@ $$V = \frac{nRT}{P} = \frac{2 \times 10^{-3} \times 0.0821 \times 273}{1} = 0.04
 Converting to $$cm^3$$:
 $$V = 0.0448 L \times \frac{1000 cm^3}{1 L} = 44.8 cm^3$$
 The nearest integer is 45.
-"
-72,jee_images/72.png,20,"To find the percentage composition of chlorine in the compound, we need to determine the mass of chlorine in the AgCl formed and then calculate its percentage in the original organic compound.
+</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 72</h2>
+            <div>
+                <img src="jee_images/72.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 20</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To find the percentage composition of chlorine in the compound, we need to determine the mass of chlorine in the AgCl formed and then calculate its percentage in the original organic compound.
 
 1. **Calculate the molar mass of AgCl:**
    \[ \text{Molar mass of AgCl} = \text{Molar mass of Ag} + \text{Molar mass of Cl} = 108 + 35.5 = 143.5 \, \text{g/mol} \]
@@ -1608,8 +2545,19 @@ The nearest integer is 45.
    The percentage of chlorine in the original 180 mg of the organic compound is:
    \[ \text{Percentage of Cl} = \left( \frac{35.5}{180} \right) \times 100 \approx 19.72\% \]
 
-Therefore, the percentage composition of chlorine in the compound is approximately 19.72%. Approximates to 20%."
-73,jee_images/73.png,6,"To determine the number of molecules/ions with linear geometry, we need to consider the structure of each species:
+Therefore, the percentage composition of chlorine in the compound is approximately 19.72%. Approximates to 20%.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 73</h2>
+            <div>
+                <img src="jee_images/73.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 6</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>To determine the number of molecules/ions with linear geometry, we need to consider the structure of each species:
 
 1.  **SO2**: Bent shape due to the lone pair on sulfur.
 2.  **BeCl2**: Linear shape. Beryllium has two valence electrons, and it forms two bonds with chlorine atoms. No lone pairs on Be.
@@ -1622,8 +2570,19 @@ Therefore, the percentage composition of chlorine in the compound is approximate
 9.  **I3-**: Linear shape. The central iodine atom forms single bonds with the other two iodine atoms and has three lone pairs. Similar to XeF2, the lone pairs result in a linear shape.
 10. **O3**: Bent shape due to resonance and lone pair on the central oxygen.
 
-Therefore, the molecules/ions with linear geometry are: BeCl2, CO2, N3-, XeF2, NO2+, and I3-. The total number is 6."
-74,jee_images/74.png,84,"The reaction A -> B follows first-order kinetics.
+Therefore, the molecules/ions with linear geometry are: BeCl2, CO2, N3-, XeF2, NO2+, and I3-. The total number is 6.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 74</h2>
+            <div>
+                <img src="jee_images/74.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 84</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The reaction A -> B follows first-order kinetics.
 We are given:
 Temperature, T = 1000 K
 Activation energy, Ea = 191.48 kJ/mol = 191480 J/mol
@@ -1645,12 +2604,29 @@ t1/2 = 8.446 * 10^-11 s
 We need to convert this to picoseconds:
 t1/2 = 8.446 * 10^-11 s * (10^12 ps / 1 s)
 t1/2 = 84.46 ps
-Rounding to the nearest integer, we get 84 ps."
-75,jee_images/75.png,154,"The reaction sequence starts with nitrobenzene. 
+Rounding to the nearest integer, we get 84 ps.</p>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0; padding: 20px; border-bottom: 1px solid #ccc;">
+            <h2>Question 75</h2>
+            <div>
+                <img src="jee_images/75.png" alt="Question Image" style="max-width: 100%; height: auto;" />
+            </div>
+            <p><strong>Correct Option:</strong> 154</p>
+            <div>
+                <strong>Solution:</strong>
+                <p>The reaction sequence starts with nitrobenzene. 
 Step 1: Sn + HCl reduces the nitro group (-NO2) to an amino group (-NH2), forming aniline.
 Step 2: NaNO2 + HCl at 0°C converts the aniline to a diazonium salt (benzenediazonium chloride).
 Step 3: Cu2Cl2 converts the diazonium salt to chlorobenzene (Sandmeyer reaction).
 Step 4: Na, Ether is a Wurtz-Fittig reaction which couples two chlorobenzene molecules to form biphenyl.
 
 The product A is biphenyl (C12H10).
-The molar mass of biphenyl is (12 * 12) + (10 * 1) = 144 + 10 = 154 g/mol."
+The molar mass of biphenyl is (12 * 12) + (10 * 1) = 144 + 10 = 154 g/mol.</p>
+            </div>
+        </div>
+        
+    </body>
+    </html>
+    
